@@ -6,6 +6,30 @@
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"/>
 </head>
 <body>
+    <div class="container">
+        <h1 class="subject">DANH MUC SAN PHAM</h1>
+
+        <table border="1" class="product">
+            <tr>
+                <th></th>
+                <th>Ma san pham</th>
+                <th>Ten san pham</th>
+                <th>Mo ta</th>
+                <th>Gia ban</th>
+            </tr>
+            {% for p in products %}
+            <tr>
+                <td>
+                   <img src="{{ url_for('static', filename=p.image) }}" width="120"  alt="{{ p.name }}"/>
+                </td>
+                <td>{{ p.id }}</td>
+                <td>{{ p.name }}</td>
+                <td>{{ p.description }}</td>
+                <td>{{ "{:,.1f}" .format(p.price) }} VND</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
 
 </body>
 </html>

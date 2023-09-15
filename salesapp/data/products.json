@@ -4,7 +4,7 @@
  "description": "Apple, 32GB, RAM: 3GB, iOS13",
  "price": 17000000,
  "image":
-"image/Black_1.png",
+"image/Black_1.jpg",
  "category_id": 1
 }, {
  "id": 2,
@@ -12,7 +12,7 @@
  "description": "Apple, 128GB, RAM: 6GB",
  "price": 37000000,
  "image":
-"image/Blue_1.png",
+"image/Blue_1.jpg",
  "category_id": 2
 }, {
  "id": 3,
@@ -20,6 +20,6 @@
 "description": "Samsung, 64GB, RAML: 6GB",
  "price": 24000000,
  "image":
-"image/Gold_1.png",
+"image/Gold_1.jpg",
  "category_id": 1
 }]
