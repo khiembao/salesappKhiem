@@ -8,7 +8,7 @@ def read_json(path):
 def load_categories():
     return read_json(os.path.join(app.root_path, 'data/categories.json'))
 
-def load_products(cate_id=None):
+def load_products(cate_id=None, kw=None, from_price=None, to_price=None):
     products = read_json(os.path.join(app.root_path, 'data/products.json'))
 
     if cate_id:
