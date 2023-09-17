@@ -14,7 +14,7 @@
         </li>
         {% for c in categories %}
         <li>
-            <a href="#">{{ c.name }}</a>
+            <a href="/products?category_id={{ c.id }}">{{ c.name }}</a>
         </li>
         {% endfor %}
     </ul>

@@ -1,5 +1,5 @@
 
-from flask import render_template
+from flask import render_template, request
 from salesapp import app
 import utils
 
@@ -11,8 +11,11 @@ def home():
 
 @app.route("/products")
 def product_list():
-    products = utils.load_products()
-    return render_template('products.html', products = products)
+    cate_id = request.args.get("category_id")
+
+    products = utils.load_products(cate_id=cate_id)
+
+    return render_template('products.html', products=products)
 
 if __name__ == '__main__':
     app.run(debug=True)
