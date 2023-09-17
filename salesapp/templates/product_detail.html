@@ -7,8 +7,15 @@
 </head>
 <body>
   <h1 class="subject">CHI TIET SAN PHAM</h1>
-  <div class="container">
-
+  <div class="container flex">
+    <div>
+       <img src="{{ url_for('static', filename=product.image) }}" width="200" alt="{{ product.name }}"/>
+    </div>
+      <div>
+          <h2>{{ product.name }}</h2>
+          <p>{{ product.description }}</p>
+          <h4>{{ "{:,.1f}".format(product.price) }} VND</h4>
+      </div>
   </div>
 </body>
 </html>
