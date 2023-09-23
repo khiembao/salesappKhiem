@@ -9,6 +9,7 @@ class ProductView(ModelView):
     can_view_details = True
     can_export = True
     column_display_all_relations = True
+    column_hide_backrefs = False
     column_list = ['name', 'description', 'price', 'image', 'active', 'created_date', 'category_id']
     column_searchable_list = ['name', 'description']
     column_filters = ['name', 'price']
